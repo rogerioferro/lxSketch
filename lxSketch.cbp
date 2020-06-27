@@ -15,26 +15,7 @@
 				<Compiler>
 					<Add option="-std=c++14" />
 					<Add option="-g" />
-					<Add directory="../libs/wxWidgets-3.1.1/lib/gcc_dll/mswu" />
-					<Add directory="include" />
-					<Add directory="lxSketch/include" />
 				</Compiler>
-				<ResourceCompiler>
-					<Add directory="../libs/wxWidgets-3.1.1/lib/gcc_dll/mswu" />
-				</ResourceCompiler>
-				<Linker>
-					<Add library="libwxmsw31u_aui.a" />
-					<Add library="libwxmsw31u_core.a" />
-					<Add library="libwxbase31u.a" />
-					<Add library="libwxpng.a" />
-					<Add library="libwxjpeg.a" />
-					<Add library="libwxtiff.a" />
-					<Add library="libwxzlib.a" />
-					<Add library="libwxregexu.a" />
-					<Add library="libwxexpat.a" />
-					<Add library="libwxmsw31u_adv.a" />
-					<Add directory="../libs/wxWidgets-3.1.1/lib/gcc_dll" />
-				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/lxSketch" prefix_auto="1" extension_auto="1" />
@@ -45,25 +26,9 @@
 				<Compiler>
 					<Add option="-fexpensive-optimizations" />
 					<Add option="-O3" />
-					<Add directory="../libs/wxWidgets-3.1.1/lib/gcc_dll/mswu" />
-					<Add directory="include" />
-					<Add directory="lxSketch/include" />
 				</Compiler>
-				<ResourceCompiler>
-					<Add directory="../libs/wxWidgets-3.1.1/lib/gcc_dll/mswu" />
-				</ResourceCompiler>
 				<Linker>
 					<Add option="-s" />
-					<Add library="libwxmsw31u_aui.a" />
-					<Add library="libwxmsw31u_core.a" />
-					<Add library="libwxbase31u.a" />
-					<Add library="libwxpng.a" />
-					<Add library="libwxjpeg.a" />
-					<Add library="libwxtiff.a" />
-					<Add library="libwxzlib.a" />
-					<Add library="libwxregexu.a" />
-					<Add library="libwxexpat.a" />
-					<Add directory="../libs/wxWidgets-3.1.1/lib/gcc_dll" />
 				</Linker>
 			</Target>
 		</Build>
@@ -77,51 +42,22 @@
 			<Add option="-DWXUSINGDLL" />
 			<Add option="-DwxUSE_UNICODE" />
 			<Add option="-DNDEBUG" />
-			<Add directory="../libs/wxWidgets-3.1.1/include" />
+			<Add directory="../libs/wxWidgets-3.1.3/include" />
 			<Add directory="../libs/rapidjson/include" />
+			<Add directory="../libs/wxWidgets-3.1.3/lib/gcc_dll/mswu" />
+			<Add directory="include" />
+			<Add directory="lxSketch/include" />
 		</Compiler>
 		<ResourceCompiler>
-			<Add directory="../libs/wxWidgets-3.1.1/include" />
+			<Add directory="../libs/wxWidgets-3.1.3/include" />
+			<Add directory="../libs/wxWidgets-3.1.3/lib/gcc_dll/mswu" />
 		</ResourceCompiler>
 		<Linker>
 			<Add option="-mthreads" />
+			<Add library="libwxbase31u.a" />
+			<Add library="libwxmsw31u_core.a" />
+			<Add directory="../libs/wxWidgets-3.1.3/lib/gcc_dll" />
 		</Linker>
-		<Unit filename="../libs/rapidjson/include/rapidjson/allocators.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/cursorstreamwrapper.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/document.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/encodedstream.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/encodings.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/error/en.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/error/error.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/filereadstream.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/filewritestream.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/fwd.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/internal/biginteger.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/internal/diyfp.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/internal/dtoa.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/internal/ieee754.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/internal/itoa.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/internal/meta.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/internal/pow10.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/internal/regex.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/internal/stack.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/internal/strfunc.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/internal/strtod.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/internal/swap.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/istreamwrapper.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/memorybuffer.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/memorystream.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/msinttypes/inttypes.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/msinttypes/stdint.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/ostreamwrapper.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/pointer.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/prettywriter.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/rapidjson.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/reader.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/schema.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/stream.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/stringbuffer.h" />
-		<Unit filename="../libs/rapidjson/include/rapidjson/writer.h" />
 		<Unit filename="include/lxCanvas.h" />
 		<Unit filename="include/lxCanvasObject.h" />
 		<Unit filename="include/lxCanvasTool.h" />
@@ -142,6 +78,42 @@
 		<Unit filename="include/lxSelectCanvastool.h" />
 		<Unit filename="include/lxSketchApp.h" />
 		<Unit filename="include/lxSketchFrame.h" />
+		<Unit filename="include/rapidjson/allocators.h" />
+		<Unit filename="include/rapidjson/cursorstreamwrapper.h" />
+		<Unit filename="include/rapidjson/document.h" />
+		<Unit filename="include/rapidjson/encodedstream.h" />
+		<Unit filename="include/rapidjson/encodings.h" />
+		<Unit filename="include/rapidjson/error/en.h" />
+		<Unit filename="include/rapidjson/error/error.h" />
+		<Unit filename="include/rapidjson/filereadstream.h" />
+		<Unit filename="include/rapidjson/filewritestream.h" />
+		<Unit filename="include/rapidjson/fwd.h" />
+		<Unit filename="include/rapidjson/internal/biginteger.h" />
+		<Unit filename="include/rapidjson/internal/diyfp.h" />
+		<Unit filename="include/rapidjson/internal/dtoa.h" />
+		<Unit filename="include/rapidjson/internal/ieee754.h" />
+		<Unit filename="include/rapidjson/internal/itoa.h" />
+		<Unit filename="include/rapidjson/internal/meta.h" />
+		<Unit filename="include/rapidjson/internal/pow10.h" />
+		<Unit filename="include/rapidjson/internal/regex.h" />
+		<Unit filename="include/rapidjson/internal/stack.h" />
+		<Unit filename="include/rapidjson/internal/strfunc.h" />
+		<Unit filename="include/rapidjson/internal/strtod.h" />
+		<Unit filename="include/rapidjson/internal/swap.h" />
+		<Unit filename="include/rapidjson/istreamwrapper.h" />
+		<Unit filename="include/rapidjson/memorybuffer.h" />
+		<Unit filename="include/rapidjson/memorystream.h" />
+		<Unit filename="include/rapidjson/msinttypes/inttypes.h" />
+		<Unit filename="include/rapidjson/msinttypes/stdint.h" />
+		<Unit filename="include/rapidjson/ostreamwrapper.h" />
+		<Unit filename="include/rapidjson/pointer.h" />
+		<Unit filename="include/rapidjson/prettywriter.h" />
+		<Unit filename="include/rapidjson/rapidjson.h" />
+		<Unit filename="include/rapidjson/reader.h" />
+		<Unit filename="include/rapidjson/schema.h" />
+		<Unit filename="include/rapidjson/stream.h" />
+		<Unit filename="include/rapidjson/stringbuffer.h" />
+		<Unit filename="include/rapidjson/writer.h" />
 		<Unit filename="include/type_name.h" />
 		<Unit filename="resource.rc">
 			<Option compilerVar="WINDRES" />
