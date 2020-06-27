@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="lxSketch" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/lxSketchr" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-std=c++14" />
+					<Add option="-g" />
+					<Add directory="../libs/wxWidgets-3.1.1/lib/gcc_dll/mswu" />
+					<Add directory="include" />
+					<Add directory="lxSketch/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../libs/wxWidgets-3.1.1/lib/gcc_dll/mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwxmsw31u_aui.a" />
+					<Add library="libwxmsw31u_core.a" />
+					<Add library="libwxbase31u.a" />
+					<Add library="libwxpng.a" />
+					<Add library="libwxjpeg.a" />
+					<Add library="libwxtiff.a" />
+					<Add library="libwxzlib.a" />
+					<Add library="libwxregexu.a" />
+					<Add library="libwxexpat.a" />
+					<Add library="libwxmsw31u_adv.a" />
+					<Add directory="../libs/wxWidgets-3.1.1/lib/gcc_dll" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/lxSketch" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-O3" />
+					<Add directory="../libs/wxWidgets-3.1.1/lib/gcc_dll/mswu" />
+					<Add directory="include" />
+					<Add directory="lxSketch/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="../libs/wxWidgets-3.1.1/lib/gcc_dll/mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libwxmsw31u_aui.a" />
+					<Add library="libwxmsw31u_core.a" />
+					<Add library="libwxbase31u.a" />
+					<Add library="libwxpng.a" />
+					<Add library="libwxjpeg.a" />
+					<Add library="libwxtiff.a" />
+					<Add library="libwxzlib.a" />
+					<Add library="libwxregexu.a" />
+					<Add library="libwxexpat.a" />
+					<Add directory="../libs/wxWidgets-3.1.1/lib/gcc_dll" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++14" />
+			<Add option="-pipe" />
+			<Add option="-mthreads" />
+			<Add option="-D__GNUWIN32__" />
+			<Add option="-D__WXMSW__" />
+			<Add option="-DWXUSINGDLL" />
+			<Add option="-DwxUSE_UNICODE" />
+			<Add option="-DNDEBUG" />
+			<Add directory="../libs/wxWidgets-3.1.1/include" />
+			<Add directory="../libs/rapidjson/include" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="../libs/wxWidgets-3.1.1/include" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-mthreads" />
+		</Linker>
+		<Unit filename="../libs/rapidjson/include/rapidjson/allocators.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/cursorstreamwrapper.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/document.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/encodedstream.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/encodings.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/error/en.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/error/error.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/filereadstream.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/filewritestream.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/fwd.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/internal/biginteger.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/internal/diyfp.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/internal/dtoa.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/internal/ieee754.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/internal/itoa.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/internal/meta.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/internal/pow10.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/internal/regex.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/internal/stack.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/internal/strfunc.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/internal/strtod.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/internal/swap.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/istreamwrapper.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/memorybuffer.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/memorystream.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/msinttypes/inttypes.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/msinttypes/stdint.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/ostreamwrapper.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/pointer.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/prettywriter.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/rapidjson.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/reader.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/schema.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/stream.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/stringbuffer.h" />
+		<Unit filename="../libs/rapidjson/include/rapidjson/writer.h" />
+		<Unit filename="include/lxCanvas.h" />
+		<Unit filename="include/lxCanvasObject.h" />
+		<Unit filename="include/lxCanvasTool.h" />
+		<Unit filename="include/lxCurveCanvasTool.h" />
+		<Unit filename="include/lxDC.h" />
+		<Unit filename="include/lxEllipseCanvasObject.h" />
+		<Unit filename="include/lxEllipseCanvasTool.h" />
+		<Unit filename="include/lxGeometry.h" />
+		<Unit filename="include/lxLineCanvasObject.h" />
+		<Unit filename="include/lxLineCanvasTool.h" />
+		<Unit filename="include/lxObject.h" />
+		<Unit filename="include/lxPolygonCanvasObject.h" />
+		<Unit filename="include/lxPolygonCanvasTool.h" />
+		<Unit filename="include/lxRectCanvasObject.h" />
+		<Unit filename="include/lxRectCanvasTool.h" />
+		<Unit filename="include/lxScribbleCanvasObject.h" />
+		<Unit filename="include/lxScribbleCanvasTool.h" />
+		<Unit filename="include/lxSelectCanvastool.h" />
+		<Unit filename="include/lxSketchApp.h" />
+		<Unit filename="include/lxSketchFrame.h" />
+		<Unit filename="include/type_name.h" />
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="src/lxCanvas.cpp" />
+		<Unit filename="src/lxCanvasObject.cpp" />
+		<Unit filename="src/lxCurveCanvastool.cpp" />
+		<Unit filename="src/lxDC.cpp" />
+		<Unit filename="src/lxEllipseCanvasObject.cpp" />
+		<Unit filename="src/lxEllipseCanvasTool.cpp" />
+		<Unit filename="src/lxLineCanvasObject.cpp" />
+		<Unit filename="src/lxLineCanvasTool.cpp" />
+		<Unit filename="src/lxPolygonCanvasObject.cpp" />
+		<Unit filename="src/lxPolygonCanvasTool.cpp" />
+		<Unit filename="src/lxRectCanvasObject.cpp" />
+		<Unit filename="src/lxRectCanvasTool.cpp" />
+		<Unit filename="src/lxScribbleCanvasObject.cpp" />
+		<Unit filename="src/lxScribbleCanvasTool.cpp" />
+		<Unit filename="src/lxSelectCanvastool.cpp" />
+		<Unit filename="src/lxSketchApp.cpp" />
+		<Unit filename="src/lxSketchFrame.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
